@@ -1,0 +1,6 @@
+# Aggregator mode configuration
+mode = "aggregator"
+
+[aggregator]
+port = 8080
+database = "sysinfo.db"

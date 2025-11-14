@@ -1,0 +1,8 @@
+# Agent mode configuration
+mode = "agent"
+
+[agent]
+listen_addr = ":8080"  # Address for agent HTTP server (receives test requests from aggregator)
+aggregator_url = "http://10.150.3.253:8080"  # URL of the aggregator server
+register_interval = 300  # seconds between re-registrations (keeps "last_seen" updated)
+

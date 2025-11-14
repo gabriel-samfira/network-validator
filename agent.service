@@ -1,0 +1,14 @@
+[Unit]
+Description=Network validator
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/validate -config /tmp/agent.toml
+Restart=always
+RestartSec=5s
+User=root
+
+[Install]
+WantedBy=multi-user.target
+
